@@ -1,0 +1,62 @@
+/* pages/Recharge/Recharge.wxss */
+page{
+  height: 100%;
+}
+.aaa {
+  /* background: #ADA996;  /* fallback for old browsers *//* background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);   Chrome 10-25, Safari 5.1-6  *//* background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+  */
+  background-color: #f5f5f5;
+  width: 80%;
+  height: 0;
+  padding-bottom: 80%;
+  margin-left: 10%;
+  border-radius: 10px;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.Frame {
+  border: 3px solid #b79d7f;
+  border-radius: 10px;
+  margin: 20px;
+  background-color: #fcfaed;
+}
+
+.FrameWithin {
+  margin: 15px;
+  border-radius: 10px;
+  background-color: #e4dcca;
+}
+
+.payment {
+  border-radius: 10px;
+  width: 30%;
+  height: 210rpx;
+  border: 1px solid #e7daca;
+  margin-left: 2.5%;
+  display: inline-block;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.aaa image {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 40rpx;
+}
+
+#top image {
+  width: 190rpx;
+  height: 40rpx;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#top text {
+  vertical-align: middle;
+}
+
+#top view {
+  margin-top: 10rpx;
+}

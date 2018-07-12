@@ -1,0 +1,84 @@
+<!--pages/answer/answer.wxml-->
+<view style="background-image: url('http://speed.goods123.cn/riddles/bg.png');height:100%;position: fixed;top: 0px;width: 100%;">
+  <!--头部  -->
+  <view id='top'>
+    <!--左侧头像  -->
+    <view style='width: 50%;display: inline-block;text-align:center;'>
+<!--       <image src='/images//toxiang.png'></image>
+    <view style='display: inline-block;font-size: 15px;border: 1px solid red;margin-left: -5rpx; width: 30%;'>杨平川</view> -->
+    </view>
+    <!-- 右侧积分 -->
+    <view style='width: 50%;display: inline-block;text-align:center;'>
+      <navigator url='/pages/Recharge/Recharge'>
+        <view class="top_top" style=""> 
+            <view style="position:absolute;"> 
+            </view>
+          <view style="background-image: url('http://speed.goods123.cn/riddles/0180612222352.png');/*background-size: width:30px*/background-size: 100% 100%;text-align: center;width: 60%;margin-left: 15%;margin-top: 20rpx;">
+          <image class="navigator_top_img" src="../../images/Other/Answer/jb.png" alt="" />
+            <text style='font-size: 30rpx;line-height: 60rpx;color:#fff'>{{user.coin}}</text>
+          </view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+
+  
+  <!--谜语显示  -->
+  <view class='headline'>
+    <view class="headline_top" style='font-size:80rpx'>第{{user.checkpoint}}关</view>
+    <view class="headline_tops">猜{{source}}</view>
+    <view class="headline_center">
+      <image class="headline_center_img" src='{{img}}' style='width:240rpx;height:240rpx;'></image>
+      <image class="headline_center_img_center" wx:if="{{img_s!=''}}" src='../../images/Other/Answer/005.png' style='width:100rpx;height:100rpx;'></image>
+      <image class="headline_center_img" wx:if="{{img_s!=''}}" src='{{img_s}}' style='width:240rpx;height:240rpx;'></image>
+    </view>
+  </view>
+<view style='text-align: center;margin-bottom: -5%;color: red;font-size:50rpx;height:50rpx'><text  wx:if="{{error}}">再试一次</text> </view> 
+  <view class="answer_top">
+    <!--帮助过关按钮  -->
+    <view style='display:inline-block;text-align:center;width:100%'>
+
+      <!--求助  -->
+      <button open-type='share' bindtap='Forward' style='width:20%;height:80rpx;border:0px solid #353535;display:inline-block;' type="" plain="trun">
+        <image style='width:100%;height:100%;' src="../../images/Other/Answer/qz.png"></image>
+      </button>
+      <!--提示  -->
+      <button bindtap='hint' style='width: 20%;height: 80rpx;border: 0px solid #353535;display: inline-block;margin-left: 15%;margin-right: 15%;' type="" plain="trun">
+        <image style='width:100%;height:100%;' src='../../images/Other/Answer/yw.png'></image>
+      </button>
+      <!--跳过  -->
+      <button open-type='getUserInfo' bindgetuserinfo="onGotUserInfo" style='width:20%;height:80rpx;border:0px solid #353535;display:inline-block;' type="" plain="trun">
+        <image style='width:100%;height:100%;' src='../../images/Other/Answer/tg.png'></image>
+      </button>
+    </view>
+    <view style='display:inline-block;text-align:center;width:100%'>
+      <!--求助  -->
+      <button open-type='share' bindtap='Forward' style='width: 33.3%;height: 60rpx;border: 0px solid #353535;display: inline-block;' type="" plain="trun">
+        <image style='width:100%;height:100%;' src="../../images/Other/Answer/qzhy.png"></image>
+      </button>
+      <!--提示  -->
+      <button  bindtap='hint' style='width: 33.3%;height: 60rpx;border: 0px solid #353535;display: inline-block;' type="" plain="trun">
+        <image style='width:100%;height:100%;' src='../../images/Other/Answer/zqxx.png'></image>
+      </button>
+      <!--跳过  -->
+      <button bindtap='skip' style='width: 33.3%;height: 60rpx;border: 0px solid #353535;display: inline-block;' type="" plain="trun">
+        <image style='width:100%;height:100%;' src='../../images/Other/Answer/tgcg.png'></image>
+      </button>
+    </view>
+  </view>
+
+  <!--错误提示区  -->
+  <!-- <view wx:if="{{error}}" style='text-align: center;margin-bottom: -5%;color: red;'>再试一次</view> -->
+  <!--成语显示区域  -->
+  <view class='answer' style=''>
+    <view class='content' wx:for="{{answer}}" bindtap='cancel' data-index="{{index}}" style=''>
+      <text class='iconfont'>{{item.name}}</text>
+    </view>
+  </view>
+  <!--底部选择区域  -->
+  <view class='option'>
+    <view bindtap='select' data-index='{{index}}' wx:for="{{option}}">
+      <text class='iconfont'> {{item}}</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,25 @@
+<!--pages/account/account.wxml-->
+<view style="background-image: url('http://speed.goods123.cn/riddles/bg.png');height:100%;position: fixed;top: 0px;width: 100%;">
+  <view style='margin-top: 10%;margin-left: 5%;font-size: 25px;/*width: 30%*/float: left;'>id:{{user.user_id}}</view>
+  <view style='float: right;margin-top: 5%;text-align: center;margin-right: 5%;'>
+   <button open-type='share' bindtap='Forward' style='border: 0px solid #353535;display: inline-block;' type="" plain="trun">
+    <image style='width:120rpx;height:120rpx;' src='/images/Other/Recharge/01.png'></image>  
+  </button>
+    <view>炫耀财富</view>
+  </view>
+  <view style='float: left;width: 100%;text-align: center;clear: both;margin-top: -5%;margin-bottom:10%'>
+    <image style='width:240rpx;height:240rpx;border-radius:150px;' src='{{userInfo.avatarUrl}}'></image>
+    <view style='margin: 5% 0 5% 0;font-size: 50rpx;'>{{userInfo.nickName}}</view>
+    <view>共获得{{user.profit_balance}}元</view>
+  </view>
+  <view class='Put_forward'>
+    <view>
+      <image wx:if="{{user.profit_balance>=30}}" bindtap='withdrawal' src='/images/Other/Recharge/04.png'></image>
+      <image wx:else  src='/images/Other/Recharge/05.png'></image>
+    </view>
+    <view>
+      <image bindtap='go_index' src='/images/Other/Recharge/03.png'></image>
+    </view>
+  </view>
+    <view style='text-align:center;color:#FFFF33' wx:if="{{user.profit_balance<=30}}">满二十元即可提现</view>  
+</view>

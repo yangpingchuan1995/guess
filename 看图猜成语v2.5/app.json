@@ -1,0 +1,19 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/top/top",    
+    "pages/answer/answer",   
+    "pages/Challenge/Challenge",
+    "pages/Challenge/Challenge_answer/Challenge_answer",
+    "pages/account/account",
+    "pages/help/help",    
+    "pages/Recharge/Recharge",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#997c6c",
+    "navigationBarTitleText": "猜图大咖",
+    "navigationBarTextStyle":"black"
+  }
+}

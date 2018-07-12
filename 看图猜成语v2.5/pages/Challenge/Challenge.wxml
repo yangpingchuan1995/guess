@@ -1,0 +1,15 @@
+<!--pages/Challenge/Challenge.wxml-->
+<view style="background-image: url('http://speed.goods123.cn/program_bg.png');height:100%;position: fixed;top: 0px;width: 100%;">
+  <view class='box'>
+    <view class='Bulletin_board'>
+      <view style='font-size:40rpx;color:#e97030;'>挑战赢现金!</view>
+      <view>连续答对十题,立即瓜分现金</view>
+      <view>当前奖池剩余$
+        <text style='color:#f12738;'>{{user}}</text>元</view>
+      <view>每天可以无限挑战,每次胜利都可领取红包</view>
+    </view>
+    <navigator hover-class='none' url='Challenge_answer/Challenge_answer'>
+      <button style='color: #f5fefb;width: 30%;/*text-align: center*/margin-top: -5%;background-color: #52b0cf;'>挑战</button>
+    </navigator>
+  </view>
+</view>

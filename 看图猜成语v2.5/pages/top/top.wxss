@@ -1,0 +1,52 @@
+/* pages/top/top.wxss */
+page{
+  height: 100%;
+}
+.top{
+  background-color: #d9b396;
+  border: 1px solid #bb937b;
+  border-radius: 10rpx;
+  width: 25%;
+  text-align: center;
+  margin-left: 5%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+.list{
+  /* overflow: scroll; */
+  border: 2px solid #a88265;
+  background-color: #fdfbee;
+  height: 60%;
+  width: 90%;
+  border-radius: 10rpx;
+  margin-left: 5%;
+}
+.information{
+  margin-left: 5%;
+  height: 120rpx;
+  border-radius: 20rpx;
+  width: 90%;
+  margin-top: 5%;
+  background-color: #e7dccb;
+  border: 1px solid #b89f8a;
+}
+.ranking{
+  display: inline-block;
+  margin-left: 10%;
+  line-height: 120rpx;
+  width: 60rpx;
+}
+.image{
+ width: 100rpx;
+ height: 100rpx;
+ border-radius: 100rpx;
+  vertical-align: middle;
+ border: 1px solid #a88265;
+ margin-left: 10%;
+}
+.name{
+  margin-left: 10%;
+  display: inline-block;
+  font-size: 25rpx;
+  vertical-align: middle;
+}

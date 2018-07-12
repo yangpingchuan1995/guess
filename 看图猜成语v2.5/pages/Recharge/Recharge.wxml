@@ -1,0 +1,29 @@
+<!--pages/Recharge/Recharge.wxml-->
+<view style="background-image: url('http://speed.goods123.cn/program_bg.png');height:100%;position: fixed;top: 0px;width: 100%;">
+<view class='Frame' style="">
+  <view class='FrameWithin' style=''>
+    <view wx:for="{{payment}}" wx:key="{{index}}" class='payment' style="{{item.money==now_payment.money?'border: 2px solid #f6a053;':'border: 1px solid #e7daca;'}}" bindtap='payment' data-index='{{index}}'>
+      <view class='aaa' style="">
+        <view>
+          <image src='/images/jinbi.png' style=''></image>
+        </view>
+      </view>
+      <view style='text-align: center;font-size: 10px;'>
+        <view>{{item.coin}}</view>
+        <view style='color:#c18f6e;'>{{item.money}}元</view>
+      </view>
+    </view>
+  </view>
+  <view style='text-align: center;' id='top'>
+    <view style='color:#ce9e41;'>
+      <text>当前</text>
+      <image style='width:40rpx;height:40rpx' src='/images/jinbi.png'></image>
+      <text>{{user.coin}}</text>
+    </view>
+    <view>
+      <button bindtap='play' data-money='{{now_payment.money}}' style="width: 240rpx;">支付</button>
+    </view>
+    <view style='color:#94856b'>分享免费获得50金币</view>
+  </view>
+</view>
+</view>

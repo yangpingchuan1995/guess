@@ -1,0 +1,14 @@
+<!--pages/top/top.wxml-->
+<view style="background-image: url('http://speed.goods123.cn/program_bg.png');height:100%;position: fixed;top: 0px;width: 100%;">
+<!--关卡排行  -->
+<view class='top'>关卡排行</view>
+<view class='list'>
+<scroll-view scroll-y="true" style="height: 100%;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+    <view wx:for="{{list}}" class='information' bindscrolltolower='lower'>
+      <view class='ranking'>{{index+1}}</view>
+       <image class='image' src='{{item.user_head}}'></image> 
+      <text class='name'>{{item.user_name}}\n{{item.checkpoint}}关</text>
+    </view>
+  </scroll-view>
+</view>
+</view>

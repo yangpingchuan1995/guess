@@ -1,0 +1,22 @@
+/**index.wxss**/
+page{
+  height: 100%;
+}
+#top image{
+ width:190rpx;
+height:60rpx;
+display:inline-block;
+vertical-align:middle;
+}
+#top{
+  height: auto;
+}
+.Answer image{
+  width: 60%;
+  height: 200rpx;
+
+}
+.Answer{
+    text-align: center;
+    margin: 10px;
+}

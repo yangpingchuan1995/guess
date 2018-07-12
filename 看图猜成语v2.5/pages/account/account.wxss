@@ -1,0 +1,16 @@
+/* pages/account/account.wxss */
+.Put_forward view{
+  display: inline-block;
+  width: 50%;
+  height: 100rpx
+}
+.Put_forward{
+  text-align: center;
+  width: 100%;
+  clear: both;
+  margin-top: 10%;
+}
+.Put_forward image{
+  width: 80%;
+  height: 100rpx
+}
